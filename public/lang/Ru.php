@@ -24,6 +24,7 @@ const YESSIGN = "Согласен (а) с Политикой конфиденц�
 const FORGETPASS = "Забыли пароль?";
 const ORR = "или";
 const EXITX = "выход";
+const CABINET = "Personal Area";
 
 // Footer
 const POLIT = "Политика конфиденциальности";

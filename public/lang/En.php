@@ -23,6 +23,7 @@ const YESSIGN = "I agree (a) with the Privacy Policy and the Offer Agreement";
 const FORGETPASS = "Forgot your password?";
 const ORR = "or";
 const EXITX = "exit";
+const CABINET = "Personal Area";
 
 // Footer
 const POLIT = "Privacy Policy";

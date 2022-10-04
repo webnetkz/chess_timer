@@ -13,11 +13,11 @@ require_once "./public/components/header.php";
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center 50%;
-    animation: showBgIndex 8s infinite;
+    animation: showBgIndex 3s infinite;
   }
   @keyframes showBgIndex {
     50% {
-      background-position: center 70%;
+      background-position: center 60%;
     }
   }
   .tracking h1 {
@@ -53,8 +53,16 @@ require_once "./public/components/header.php";
 
         <h1>Find out where your package is right now</h1>
         <div class="trackNumber">
-          <input type="text" class="inpHalf" placeholder="Trace track">
-          <button class="btnHalf">Trace</button>
+          <input type="text" class="inpHalf" placeholder="Trace track" id="track">
+          <button class="btnHalf" onclick="
+            let trackNumber = document.querySelector('#track');
+            if(trackNumber.value.trim() != '') {
+              location.href = './trace.php?track=' + trackNumber.value;
+            } else {
+              trackNumber.value = '';
+              showError('Pleace enter track number');
+            }
+          ">Trace</button>
         </div>
 
       </div>

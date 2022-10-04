@@ -125,7 +125,7 @@ if(isset($_SESSION['login'])) {
       <span>'.$_SESSION['login'].'</span>
     </div>
     <div class="hoverBtn" onclick="location.href = \''.$host.'\'">
-      <span>Личный кабинет</span>
+      <span>'.CABINET.'</span>
     </div>
     <br>
     <br>
