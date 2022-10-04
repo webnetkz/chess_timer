@@ -2,7 +2,7 @@
 @import url(helper.css);
 @import url(header.css);
 :root {
-  --whiteColor: rgb(255, 255, 255);
+  --white: rgb(255, 255, 255);
   --redColor: rgb(255, 0, 0);
   --bgColor: #202023;
   --mainColor: #658DFF;

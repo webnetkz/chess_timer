@@ -100,7 +100,7 @@ if(isset($_SESSION['login'])) {
     left: 30vw;
     color: red;
     background: #FFFFFF;
-    border: 2px solid #FFE565;
+    border: 2px solid var(--orange);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.13);
     border-radius: 30px;
     width: 250px;
@@ -129,7 +129,7 @@ if(isset($_SESSION['login'])) {
     </div>
     <br>
     <br>
-    <div class="hoverBtn" onclick="location.href = \''.$host.'\/app/core/sign/logout.php?url=location.href\'">
+    <div class="hoverBtn" onclick="location.href = \''.$host.'\/app/core/sign/logout.php?url=../../../index.php\'">
       <span>'.EXITX.'</span>
     </div>
   </div>`;
