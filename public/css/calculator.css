@@ -1,0 +1,559 @@
+.headerC {
+  position: relative;
+  margin-bottom: 35px;
+}
+.headersC h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #0B2E4E;
+  margin-bottom: 15px;
+}
+.headersC p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #0B2E4E;
+}
+.numC {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #0B2E4E;
+  padding: 3px 29px;
+  background: #FFFFFF;
+  border: 1px solid #0B2E4E;
+  border-radius: 30px;
+}
+.settingsC {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.mainInfoC {
+  background: #F2F2F2;
+  box-shadow: 0px 5px 10px rgba(11, 46, 78, 0.13);
+  border-radius: 30px;
+  padding: 16px 21px;
+  margin-bottom: 35px;
+}
+.mainInfoCcontent {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #0B2E4E;
+}
+.mainInfoCcontent h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #0B2E4E;
+  margin-bottom: 22px;
+}
+.selectsLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  height: 60px;
+}
+.selectsLine .select {
+  width: 241.98px;
+  height: 58.08px;
+  filter: drop-shadow(0px 5px 10px rgba(11, 46, 78, 0.13));
+  background: #FFFFFF;
+  border: 2.13917px solid #FFE565;
+  border-radius: 32.0876px;
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16.4547px;
+  line-height: 19px;
+  text-align: center;
+  color: #0B2E4E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.select {
+  transition-duration: 0s;
+}
+.select > div {
+  width: 240px;
+  min-height: 58.08px;
+  line-height: 58px;
+  text-align: left;
+  padding-left: 25px;
+}
+.selectsLine .select div:hover {
+  cursor: pointer;
+}
+.selectsLine .selectContent {
+  box-sizing: border-box;
+  width: 241.98px;
+  filter: drop-shadow(0px 5px 10px rgba(11, 46, 78, 0.13));
+  background: #FFFFFF;
+  border: 2.13917px solid #FFE565;
+  border-radius: 32.0876px;
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16.4547px;
+  line-height: 19px;
+  text-align: left;
+  color: #0B2E4E;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 6px;
+  padding-left: 25px;
+  padding-bottom: 20px;
+  position: relative;
+  z-index: 9999;
+}
+#packPeoples {
+  position: relative;
+  left: 101%;
+  top: -240px;
+  min-height: 300px;
+}
+#changeDays {
+  position: absolute;
+  top: 0px;
+  left: -2px;
+
+}
+.selectsLine .selectContent div {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #0B2E4E;
+}
+.headS {
+  font-style: normal;
+  font-weight: 400!important;
+  font-size: 16.4547px!important;
+  line-height: 19px!important;
+  text-align: center;
+  color: #0B2E4E;
+  padding-top: 20px;
+  margin-bottom: 15px;
+}
+.headS:hover {
+  cursor: pointer;
+}
+.resultInfo {
+  padding: 0px 42px;
+}
+.resultInfoContent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.resultInfoContent > div {
+  width: 210px;
+}
+.resultInfoContent > div > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: #0B2E4E;
+}
+span.left {
+  float: right;
+}
+#mainResultContent h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #0B2E4E;
+  margin-bottom: 20px;
+}
+.yelHead {
+  background: rgba(255, 229, 101, 0.58);
+  border-radius: 45px;
+  padding: 10px;
+  margin-bottom: 50px!important;
+}
+.yelHeadContent {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+.yelHeadContent .day {
+  position: absolute;
+  top: -12.5px;
+  left: -40px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: #0B2E4E;
+  background: #FFE565;
+  border: 2px solid #0B2E4E;
+  border-radius: 45px;
+  padding: 25px 60px;
+}
+.help {
+  margin-left: 40px;
+  margin-right: 20px;
+}
+.timeDistance > div {
+  display: flex;
+  align-items: center;
+}
+span.result {
+  padding: 3px 6px;
+  border-radius: 7px;
+  background: white;
+  margin: 2px 4px;
+}
+.location {
+  position: absolute;
+  left: 200px;
+}
+span.appendText {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 97.18%;
+  display: flex;
+  align-items: center;
+  color: #0B2E4E;
+}
+img.appendBtn {
+  margin: 1px 10px;
+}
+span.locate, .getLocations {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #0B2E4E;
+  padding: 3px 12px;
+  background: #FFFFFF;
+  border: 1.5px solid #0B2E4E;
+  border-radius: 30px;
+  min-width: 200px;
+  margin-right: 5px;
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search {
+  position: absolute;
+  top: -30px;
+  right: 240px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 97.18%;
+  display: flex;
+  align-items: center;
+  color: #0B2E4E;
+  opacity: 0.3;
+}
+.search2 {
+  margin-right: 10px;
+}
+textarea.comments {
+  background: #FFFFFF;
+  border: 1.5px solid #FFE565;
+  box-shadow: 0px 5px 10px rgba(11, 46, 78, 0.13);
+  border-radius: 30px;
+  width: 520px;
+  height: 332px;
+  outline: none;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+.resultServicesContent {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 55px;
+}
+.getServicesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.service {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 97.18%;
+  display: flex;
+  align-items: center;
+  color: #0B2E4E;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 5px;
+}
+.getServices {
+  width: 650px;
+  height: 332px;
+}
+.service > div > p {
+  padding-left: 20px;
+}
+.service > div > img:hover {
+  margin-left: -5px;
+}
+.service > hr {
+  position: absolute;
+  border-bottom: 1px solid #0B2E4E;
+  top: 0;
+  left: 0;
+  width: 630px;
+  opacity: 0.6;
+  top: 39px;
+  left: 30px;
+}
+.noSelect {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #0B2E4E;
+  opacity: 0.6;
+}
+.yesSelect {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #0B2E4E;
+}
+.z999 {
+  z-index: 99999;
+}
+.allDays {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.lineDay {
+  padding: 5px 0px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.day {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+  text-align: center;
+  color: #0B2E4E;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+.day:hover {
+  cursor: pointer;
+  background: #FFF0A6;
+}
+.oneDay {
+  background: #FFF0A6;
+}
+.smallInp {
+  color: #0B2E4E!important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 1px 14px;
+  border: 1px solid #FFE565;
+  border-radius: 7px;
+  max-width: 46px;
+  right: 10px;
+  outline: none;
+  position: absolute;
+}
+.lDay {
+  background: #FFF0A6;
+}
+.packPeoplesContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  margin-left: -15px;
+}
+.packPeoplesContentLine {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0px;
+}
+.packPeoplesContentLine {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #0B2E4E;
+}
+.packPeoplesContentLine div {
+  display: flex;
+  justify-content: right;
+}
+.setLocations {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  width: 500px;
+}
+
+
+/*============================= Radio Buttons  ==========================*/
+/* для элемента input c type="radio" */
+.pack {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  transition-duration: 300ms;
+}
+/* для элемента label связанного с .custom-radio */
+.pack+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+/* создание в label псевдоэлемента  before со следующими стилями */
+.pack+label::before {
+  content: '';
+  display: inline-block;
+  border: 1px solid #0B2E4E;
+  width: 16px;
+  height: 16px;
+  border-radius: 20px;
+  margin-left: 5px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  margin-left: 5px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+/* стили при наведении курсора на радио */
+.pack:not(:disabled):not(:checked)+label:hover::before {
+  transform: scale(1.1);
+}
+/* стили для активной радиокнопки (при нажатии на неё) */
+.pack:not(:disabled):active+label::before {
+  background-color: #FFE565;
+}
+/* стили для радиокнопки, находящейся в фокусе */
+.pack:focus+label::before {
+  background-color: #FFE565;
+}
+/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+.pack:focus:not(:checked)+label::before {
+  transform: scale(1.1);
+}
+/* стили для радиокнопки, находящейся в состоянии checked */
+.pack:checked+label::before {
+  background-color: #FFE565;
+}
+/* стили для радиокнопки, находящейся в состоянии disabled */
+.pack:disabled+label::before {
+  background-color: white;
+}
+/*============================= END Radio Buttons  ==========================*/
+
+
+/*============================= SWITCH Buttons  ==========================*/
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 22px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #E3FCE6;
+  border: 1px solid #8CDF95;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 1px;
+  background-color: #71D27C;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .slider {
+  background-color: #2ad03e;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #2ad03e;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+/*============================= END SWITCH Buttons  ==========================*/
+.appendLocationsBtn {
+  border-radius: 7px;
+  padding: 5px;
+  margin-right: 7px;
+  margin-left: 10px;
+  transition-duration: 300ms;
+}
+.appendLocationsBtn:hover {
+  background: white;
+  padding-right: 0px;
+  margin-right: 15px;
+}
