@@ -29,11 +29,20 @@
         cursor: pointer;
         transform: scale(1.1);
       }
+      @media only screen and (max-width: 1280px) {
+        .footerContent {
+          width: 90vw;
+        }
+        .linkContacts {
+          margin-left: 20px!important;
+          line-height: 40px;
+        }
+      }
     </style>
     <footer>
       <div class="footerContent">
         <div>
-          <a href="#"><?=POLIT?></a>
+          <a href="./privacy.html"><?=POLIT?></a>
           <a href="#"><?=DOGOFF?></a>
           <a href="<?=$host?>/contacts.php" class="linkContacts"><?=CONT?></a>
         </div>
@@ -88,7 +97,7 @@ if(isset($_SESSION['login'])) {
   #getUser {
     position: fixed;
     top: 70px;
-    left: calc(50vw + 500px);
+    left: 30vw;
     color: red;
     background: #FFFFFF;
     border: 2px solid #FFE565;

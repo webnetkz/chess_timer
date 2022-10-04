@@ -86,7 +86,7 @@ $host = @$_SESSION['host'];
 
     <header>
       <div class="headerContent">
-        <div class="logo" onclick="location.href = '<?=$host?>'">
+        <div class="logo" onclick="location.href = './index.php'">
           <img src="<?=$host?>/public/img/logo.png" id="logoImg">
           <span><?=NAMEAPP?></span>
         </div>
@@ -140,10 +140,12 @@ $host = @$_SESSION['host'];
                     <input type="password" id="pass2" class="yelInp signupPass2" name="pass2">
 
                     <div class="radioBtn">
-                      <span class="hoverBtn yessign" onclick="this.style.background = '#FFD400'; this.style.padding = '2px'; this.classList.add('yesCheck');"></span>
+                      <span class="hoverBtn yessign" onclick="this.style.background = 'var(--blue)'; this.style.padding = '2px'; this.classList.add('yesCheck');"></span>
                       <p><?=YESSIGN?></p>
                     </div>
-                    <span onclick="checkSignup();" class="formBtn"><?=SIGNUP?></span>
+                    <div style="display: flex; justify-content: center;">
+                      <span onclick="checkSignup();" class="formBtn"><?=SIGNUP?></span>
+                    </div>
                   </form>
                 </div>
               </div>
@@ -160,36 +162,10 @@ $host = @$_SESSION['host'];
                   <div class="hoverBtn" onclick="location.href = '<?=$host?>'">
                     <span><?=IND?></span>
                   </div>
-                  <div class="hoverBtn" onclick="location.href = '<?=$host?>/orders.php'">
-                    <span><?=ALLORD?></span>
-                  </div>
-                  <div class="hoverBtn" onclick="location.href = '<?=$host?>'">
-                    <span><?=HIST?></span>
-                  </div>
-                  <div class="hoverBtn" onclick="location.href = '<?=$host?>'">
-                    <span><?=NOMEN?></span>
-                  </div>
-                  <div class="hoverBtn" onclick="location.href = '<?=$host?>'">
-                    <span><?=SETTING?></span>
-                  </div>
-                  <div class="hoverBtn" onclick="location.href = '<?=$host?>'">
-                    <span><?=FEEDB?></span>
-                  </div>
-                  <div class="hoverBtn" onclick="location.href = '<?=$host?>/contacts.php'">
-                    <span><?=CONT?></span>
-                  </div>
-                  <div class="hoverBtn" onclick="location.href = '<?=$host?>'">
-                    <span><?=SEAR?></span>
-                  </div>
+                  
 
                   <br><br>
 
-                  <div class="hoverBtn" onclick="location.href = '<?=$host?>'">
-                    <span><?=CABLOG?></span>
-                  </div>
-                  <div class="hoverBtn" onclick="location.href = '<?=$host?>'">
-                    <span><?=OTCH?></span>
-                  </div>
                   <div class="hoverBtn" onclick="location.href = '<?=$host?>'">
                     <span><?=GID?></span>
                   </div>
@@ -213,60 +189,64 @@ $host = @$_SESSION['host'];
       }
       function showSignUp() {
         let newContent = `<div id="getUserContent">
-                  <div class="headerModal">
-                    <span class="headerModalActive"  onclick="showSignUp();"><?=SIGNUP?></span>
-                    <span class="headerModalDontActive" onclick="showSignIn();"><?=SIGNIN?></span>
-                  </div>
-                  <h2><?=SIGNUP?></h2>
+              <div class="headerModal">
+                <span class="headerModalActive"  onclick="showSignUp();"><?=SIGNUP?></span>
+                <span class="headerModalDontActive" onclick="showSignIn();"><?=SIGNIN?></span>
+              </div>
+              <h2><?=SIGNUP?></h2>
 
-                  <form action="<?=$host?>/app/core/sign/signup.php?url=<?=$host?>" class="sign signupForm" method="POST">
-                    <label for="login"><?=EM?></label>
-                    <input type="text" class="yelInp signupLogin" name="login">
+              <form action="<?=$host?>/app/core/sign/signup.php?url=<?=$host?>" class="sign signupForm" method="POST">
+                <label for="login"><?=EM?></label>
+                <input type="text" class="yelInp signupLogin" name="login">
                   
-                    <label for="pass"><?=PASS?></label>
-                    <input type="password" id="pass" class="yelInp signupPass" name="pass">
+                <label for="pass"><?=PASS?></label>
+                <input type="password" id="pass" class="yelInp signupPass" name="pass">
 
-                    <label for="pass2"><?=PASS2?></label>
-                    <input type="password" id="pass2" class="yelInp signupPass2" name="pass2">
+                <label for="pass2"><?=PASS2?></label>
+                <input type="password" id="pass2" class="yelInp signupPass2" name="pass2">
 
-                    <div class="radioBtn">
-                      <span class="hoverBtn yessign" onclick="this.style.background = '#FFD400'; this.style.padding = '2px'; this.classList.add('yesCheck');"></span>
-                      <p><?=YESSIGN?></p>
-                    </div>
-                    <span onclick="checkSignup();" class="formBtn"><?=SIGNUP?></span>
-                  </form>
-                </div>`;
-            document.querySelector("#getUser").innerHTML = newContent;
+                <div class="radioBtn">
+                  <span class="hoverBtn yessign" onclick="this.style.background = '#FFD400'; this.style.padding = '2px'; this.classList.add('yesCheck');"></span>
+                  <p><?=YESSIGN?></p>
+                </div>
+                <div style="display: flex; justify-content: center;">
+                  <span onclick="checkSignup();" class="formBtn"><?=SIGNUP?></span>
+                </div>
+              </form>
+            </div>`;
+        document.querySelector("#getUser").innerHTML = newContent;
       }
       function showSignIn() {
         let newContent = `
-                <style>
-                  #getUser {
-                    height: 510px!important;
-                  }
-                </style>
-                <div id="getUserContent">
-                  <div class="headerModal">
-                    <span class="headerModalDontActive"  onclick="showSignUp();"><?=SIGNUP?></span>
-                    <span class="headerModalActive" onclick="showSignIn();"><?=SIGNIN?></span>
-                  </div>
-                  <h2><?=SIGNIN?></h2>
+            <style>
+              #getUser {
+                height: 510px!important;
+              }
+            </style>
+            <div id="getUserContent">
+              <div class="headerModal">
+                <span class="headerModalDontActive"  onclick="showSignUp();"><?=SIGNUP?></span>
+                <span class="headerModalActive" onclick="showSignIn();"><?=SIGNIN?></span>
+              </div>
+              <h2><?=SIGNIN?></h2>
 
 
-                  <form action="${H}/app/core/sign/signin.php?url=${location.href}" class="sign signinForm" method="POST">
+              <form action="${H}/app/core/sign/signin.php?url=${location.href}" class="sign signinForm" method="POST">
                     <label for="login"><?=EM?></label>
-                    <input type="text" class="yelInp signinLogin" name="login">
+                <input type="text" class="yelInp signinLogin" name="login">
                   
-                    <label for="pass"><?=PASS?></label>
-                    <input type="password" id="pass" class="yelInp signinPass" name="pass">
+                <label for="pass"><?=PASS?></label>
+                <input type="password" id="pass" class="yelInp signinPass" name="pass">
 
-                    <div>
-                      <a href="#"><?=FORGETPASS?></a>
-                    </div>
-                    <span onclick="checkSignin()" class="formBtn"><?=SIGNIN?></span>
-                  </form>
-                </div>`;
-            document.querySelector("#getUser").innerHTML = newContent;
+                <div>
+                  <a href="#"><?=FORGETPASS?></a>
+                </div>
+                <div style="display: flex; justify-content: center;">
+                  <span onclick="checkSignin()" class="formBtn"><?=SIGNIN?></span>
+                </div>
+              </form>
+            </div>`;
+        document.querySelector("#getUser").innerHTML = newContent;
       }
     </script>
 

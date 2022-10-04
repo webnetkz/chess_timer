@@ -10,14 +10,11 @@ $url = explode('?', $url);
 $url = $url[0];
  
 if(!empty($url)) {
-  $page = substr($url, 18, -4);
+  $page = substr($url, 22, -4);
 
-  if($page == '.kz/calculator') {
-    $page = substr($url, 21, -4);
-  }
-  if($page == '.kz/orders') {
-    $page = substr($url, 21, -4);
-  }
+  // if($page == '.kz/calculator') {
+  //   $page = substr($url, 21, -4);
+  // }
 
   if($_SESSION['lang'] == "en") {
     require_once "./public/lang/".$page."En.php";

@@ -97,7 +97,7 @@ header {
   position: fixed;
   top: 70px;
   left: calc(50vw + 420px);
-  color: red;
+  color: var(--orange);
   background: #FFFFFF;
   border: 2px solid var(--orange);
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.13);
@@ -110,7 +110,7 @@ header {
   position: fixed;
   top: 70px;
   left: calc(50vw + 300px);
-  color: red;
+  color: var(--orange);
   background: #FFFFFF;
   border: 2px solid var(--orange);
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.13);
@@ -125,7 +125,7 @@ header {
   position: fixed;
   top: 70px;
   left: calc(50vw + 420px);
-  color: red;
+  color: var(--orange);
   background: #FFFFFF;
   border: 2px solid var(--orange);
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.13);
@@ -325,4 +325,34 @@ header {
   display: flex;
   align-items: center;
   color: #0B2E4E;
+}
+
+@media only screen and (max-width: 1280px) {
+  .headerContent {
+    width: 90vw;
+  }
+  .logo span {
+    display: none;
+  }
+  #getLang {
+    position: fixed;
+    top: 70px;
+    left: 50vw;
+  }
+  #getUser {
+    position: fixed;
+    top: 70px;
+    left: 5vw;
+    width: 90vw;
+    height: 630px;
+  }
+  #getUserContent {
+    padding: 50px 10px;
+  }
+  header {
+    border-bottom: 0.1px solid rgba(0, 0, 0, 0.13);
+  }
+  #getMenuBurger {
+    left: 40vw;
+  }
 }

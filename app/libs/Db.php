@@ -9,7 +9,7 @@
 
 $config = [
 	'host' => 'localhost:3306',
-	'db_name' => 'tc',
+	'db_name' => 'qpe',
 	'db_user' => 'root',
 	'db_pass' => '',
 ];
