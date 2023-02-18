@@ -1,9 +1,0 @@
-@media only screen and (max-width: 1280px) {
-  #mainContentContainer {
-    width: 90vw;
-    margin: 25px auto;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    padding-top: 20px;
-  }
-}

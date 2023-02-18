@@ -1,82 +1,12 @@
-<?php
-require_once "./public/components/header.php";
-?>
-
-
-<style>
-  #mainContent {
-    background: var(--orange);
-  }
-  .trackingContainer {
-    min-height: 70vh;
-    background: url("./public/img/indexBg.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center 50%;
-    animation: showBgIndex 3s infinite;
-  }
-  @keyframes showBgIndex {
-    50% {
-      background-position: center 60%;
-    }
-  }
-  .tracking h1 {
-    color: var(--white);
-    margin-top: 10vh;
-  }
-  .trackNumber {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
-  }
-  .inpHalf, .btnHalf {
-    border: none;
-    font-size: 1.3rem;
-    padding: 5px 15px;
-    outline: none;
-  }
-  .btnHalf {
-    background: var(--blue);
-    color: var(--white);
-  }
-</style>
-
-<!--============================================================
- ==================== Старт основного контента =================
- ============================================================-->
-<div id="mainContent">
-  <div id="mainContentContainer">
-    
-    <div class="trackingContainer">
-      <div class="tracking">
-
-        <h1>Find out where your package is right now</h1>
-        <div class="trackNumber">
-          <input type="text" class="inpHalf" placeholder="Trace track" id="track">
-          <button class="btnHalf" onclick="
-            let trackNumber = document.querySelector('#track');
-            if(trackNumber.value.trim() != '') {
-              location.href = './trace.php?track=' + trackNumber.value;
-            } else {
-              trackNumber.value = '';
-              showError('Pleace enter track number');
-            }
-          ">Trace</button>
-        </div>
-
-      </div>
-    </div>
-
-
-  </div>
-</div>
-
-
-
-<?php
-require_once "./public/components/footer.php";
-?>
-
-      
-      
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chess Timer</title>
+</head>
+<body>
+  
+</body>
+</html>
