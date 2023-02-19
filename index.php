@@ -75,8 +75,12 @@
 
       if(idNow == "two") {
         minusSec(elem);
+        elem.style.background = "#1E1E1E";
+        one.style.background = "red";
       } else {
         minusSec(elem);
+        elem.style.background = "#1E1E1E";
+        two.style.background = "red";
       }
     }
 
