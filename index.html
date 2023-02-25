@@ -32,9 +32,11 @@
     .miliseconds {
       font-size: 2rem;
       margin-left: 20px;
+      user-select: none;
     }
     #one {
       transform: rotate(180deg);
+      user-select: none;
     }
   </style>
 
@@ -50,10 +52,17 @@
   </div>
 
   <script>
+    document.addEventListener('click', function (event) {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+      }
+    }, false);
+
     let timeOftimer = prompt("Введите время в секундах");
     var timer = 0;
     isNaN(timeOftimer) ? timeOftimer = 180 : timeOftimer = Number(timeOftimer);
     const tmp = timeOftimer;
+
 
     let one = document.querySelector('#one');
     let two = document.querySelector('#two');
@@ -66,8 +75,8 @@
 
     function startTimer(one, two) {
       two.removeAttribute("click");
-      one.setAttribute("onclick", "changeTimer(this)");
-      two.setAttribute("onclick", "changeTimer(this)");
+      one.setAttribute("onmousedown", "changeTimer(this)");
+      two.setAttribute("onmousedown", "changeTimer(this)");
     }
 
     function minusTime(block, timer) {
