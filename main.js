@@ -1,10 +1,13 @@
+// Открывает приложение во весь экран
 document.addEventListener('click', function (event) {
   if (!document.fullscreenElement) {
     document.documentElement.requestFullscreen();
   }
 }, false);
 
+// Устанавливает стартовое время
 let timeOftimer = prompt("Введите время в секундах");
+
 var timer = 0;
 isNaN(timeOftimer) ? timeOftimer = 180 : timeOftimer = Number(timeOftimer);
 const tmp = timeOftimer;
